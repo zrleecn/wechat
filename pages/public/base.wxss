@@ -1,0 +1,206 @@
+/* pages/brain-sharp-turn/brain-sharp-turn.wxss *//* pages/riddles/riddles.wxss */
+
+/*题目区域  */
+.section{
+  width: 94%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding-bottom: 60px;
+
+
+}
+
+/*头部  */
+.section .header  {
+    display: flex;
+  flex-direction: row ;
+  justify-content:  center ;
+  align-content: center;
+  position: relative;
+  
+}
+/*头部的图片  */
+.section .header .header-img{
+ 
+  width: 160px;
+  height: 90px;
+}
+/*头部图片下面的下划线  */
+.header .line{
+  position: absolute ;
+  bottom: -4px;
+  left: 36%;
+  width: 100px;
+  border-top: 1px solid #ccc;
+  
+}
+
+/*题目内容外面包裹的view  */
+.section .item {
+  width: 86%;
+
+  height: 300px;
+  margin: 0 auto;
+}
+/*谜目/题目   */
+ .section .bf-title{
+  font-size: 16px;
+ 
+  
+}
+/*题目具体内容  */
+.section .title ,.section .tips{
+   margin-top: 14px;
+   font-size: 20px;
+   margin-left: 8%;
+   margin-right: 8%;
+}
+/*提示内容  */
+.section .tips{
+  font-size: 16px;
+  color: #888;
+  
+} 
+/*点赞 查看包裹的view  */
+.operation {
+  display: flex;
+justify-content: space-around;
+}
+/*查看 点赞的图片  */
+.operation .eyes image ,.operation .priase image{
+  margin-top: 20px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: -3px ;
+  margin-right: 5px;
+}
+.operation .eyes image{
+  height: 22px;
+}
+/*点赞次数 查看次数  */
+.operation .number{
+  
+  font-size: 14px;
+  color: #ccc;
+}
+
+/*答案  */
+.answer-view {
+  margin-top: 40px;
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 50px ;
+
+  display: flex;
+    
+}
+
+.answer-view .answer-text{
+  margin-top: 8px;
+  font-size: 16px;
+}
+/*答案内容  */
+.answer-view .answer-content{
+
+  display: flex ;
+  align-items: center ;
+  width: 80%;
+  height:40px;
+  
+  padding-left: 10px;
+  opacity: 1;
+  position: relative;
+}
+/* 图层 */
+.answer-view .answer-content .layer {
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  position: absolute;
+  left: 0;top: 0;
+  opacity: 1;
+}
+/*查看解释 下一题  */
+.next-look{
+  display: flex;
+  justify-content:space-between;
+}
+
+
+
+/*评论区  */
+
+.section .comment-header {
+  width: 90%;
+  font-size: 16px;
+  margin-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+
+}
+/*评论列表  */
+.comment-item{
+  margin-left: 20px;
+  width: 90%;
+  display: flex ;
+  margin-bottom: 15px;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed #ccc;
+}
+/*头像区  */
+.comment-item .portrait{
+  width: 22%;
+}
+/*头像图片  */
+.comment-item .portrait image{
+
+width: 70px;
+height: 70px;
+border-radius: 50%;
+-webkit-border-radius: 50%;
+  
+
+}
+
+/*评论项上部  */
+.comtent-top{
+  padding-left: 10px;
+  display: flex;
+  width: 78%;
+  flex-direction: column;
+}
+/*评论项底部  */
+.comment-bottom{
+  padding-left: 10px;
+  margin-top: 6px;
+  display: flex;
+  width: 100%;
+ justify-content: space-between;
+ align-items: center;
+/* position: relative; */
+}
+/*评论点赞  */
+.comment-bottom image{
+
+  width: 20px;
+  height: 20px;
+  
+ 
+}
+/*评论底部文字  */
+.comment-bottom text {
+  margin-top:5px;
+  font-size: 14px;
+  color: #888;
+}
+/*评论日期  */
+.comment-bottom .date{
+  
+  margin-right: 24px;
+}

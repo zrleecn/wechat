@@ -1,0 +1,61 @@
+/**index.wxss**/
+
+/*banner  */
+.banner{
+  width: 100%;
+  height: 150px;
+
+}
+.content {
+  display: flex ;
+
+}
+.v{
+  width: 20%;
+  height: 30px ;
+  background: darkcyan ;
+  margin: 10px ;
+}
+.header-view{
+width: 100%;
+height: 30px ;
+background: #fff;
+}
+.header{
+  
+  border-left: 3px solid #09bb07 ;
+  margin-left: 10px;
+  height: 40px;
+  padding-left:10px ;
+  padding-top: 5px;
+  font-size: 16px;
+
+}
+
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin-bottom: 10px;
+
+}
+.main-view{
+   margin-left: 10px; 
+  margin-top: 6px;
+  padding-bottom: 10px;
+  width:45%;
+}
+.main image {
+  border-radius: 6%;
+  width: 100%;
+  height: 100px;
+  
+}
+.main-view text{
+  font-size: 14px;
+  
+  
+}
+

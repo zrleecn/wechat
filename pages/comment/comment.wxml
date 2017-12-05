@@ -1,0 +1,76 @@
+<!--pages/comment/comment.wxml-->
+
+<view class='title'>
+
+  <text>评论：{{title}}</text>
+</view>
+
+<form bindsubmit="formSubmit">
+  <view class='text-content-view'>
+    <textarea maxlength='250' name='content' placeholder='留言将由管理员验证合法后显示，所有人可见' value="{{inputText}}">
+
+    </textarea>
+    <view class='emji' bindtap='emjiTogal'>
+      <text>☺</text>
+    </view>
+  </view>
+
+  <view class='emji-list' hidden='{{hideEmji}}'>
+
+    <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex">
+      <!-- display: inline-block-->
+      <view style=" width: {{screenWidth}}px; display: inline-block;  box-sizing: border-box;">
+
+        <view class='img-list' style='display:flex;flex-wrap:wrap;'>
+          <image bindtap='clickEmji' data-phrase='{{emjis[0][index].phrase}}' wx:for="{{emjis[0]}}" wx:key="emji1" class='img-item' src='{{emjis[0][index].url}}'></image>
+        </view>
+
+      </view>
+      <view style="width: {{screenWidth}}px;display: inline-block">
+        <view data-phrase='{{emjis[1][index].phrase}}' class='img-list' style='display:flex;flex-wrap:wrap;'>
+          <image bindtap='clickEmji'  wx:for="{{emjis[1]}}" wx:key="emji2" class='img-item' src='{{emjis[1][index].url}}'></image>
+        </view>
+      </view>
+      <view style="width:  {{screenWidth}}px; display: inline-block">
+        <view class='img-list' style='display:flex;flex-wrap:wrap;'>
+          <image bindtap='clickEmji' data-phrase='{{emjis[2][index].phrase}}' wx:for="{{emjis[2]}}"wx:key="emji3" class='img-item' src='{{emjis[2][index].url}}'></image>
+        </view>
+      </view>
+      <view style="width:  {{screenWidth}}px; display: inline-block">
+        <view class='img-list' style='display:flex;flex-wrap:wrap;'>
+          <image bindtap='clickEmji' data-phrase='{{emjis[3][index].phrase}}' wx:for="{{emjis[3]}}" wx:key="emji4" class='img-item' src='{{emjis[3][index].url}}'></image>
+        </view>
+      </view>
+    </scroll-view>
+
+
+
+
+
+  </view>
+
+  <button type="primary" form-type='submit'>
+    提交
+  </button>
+</form>
+
+<view class='user-comment'>
+  <view class='comment-header'>
+    <view class='line'></view>
+    <view class='title'>
+      <text>我的留言</text>
+    </view>
+    <view class='line'></view>
+  </view>
+</view>
+<view class='comment-item'>
+  <view class='portrait'>
+    <image src="/image/riddles/1.png" />
+  </view>
+  <view class='comtent-top'>
+    <text style='font-size:14px;'>nick_name</text>
+    <text style='font-size:16px;margin-top:6px;'>哈哈哈答对了</text>
+    <text class='date'>2017-12-1</text>
+
+  </view>
+</view>

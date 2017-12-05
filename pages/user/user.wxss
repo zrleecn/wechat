@@ -1,0 +1,85 @@
+/* pages/user/user.wxss */
+
+/*头部  */
+.section{
+  background-color: #fff;
+  width: 100%;
+
+  
+}
+/*头部  */
+.section .user-header {
+  display: flex ;
+  justify-content: space-between ;
+}
+/* 用户头像 */
+.section .user-header .portrait{
+  width: 80px ;
+  height: 80px;
+  margin: 15px 0 20px 20px;
+  border-radius: 50%;
+
+}
+
+/*头部右侧  */
+.user-right{
+  display: flex;
+  flex-direction: column ;
+  margin: 20px 20px 20px 0px;
+}
+/*昵称  */
+.nick_name {
+  font-size: 18px;
+  
+}
+/*等级view  */
+.level-view{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*等级  */
+.level {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  
+}
+
+/*个人管理  */
+.manager-header {
+  width: 100%;
+  height: 44px;
+ font-size: 18px;
+  margin-top: 10px ;
+  display: flex;
+  align-items: center ;
+  margin-bottom: 10px;
+
+}
+/*管理标题  */
+.manager-title{
+  border-left: 2px solid #09bb07 ;
+  padding-left: 5px;
+  margin-left: 10px ;
+}
+/*管理列表view  */
+.manager-list {
+  display: flex ;
+  justify-content: space-around ;
+  flex-wrap: wrap ;
+ margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+/*管理列表具体项  */
+.manager-item{
+  width: 130px ;
+  height: 130px ;
+  border: 1px solid #888888;
+  border-radius: 50%;
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  margin-top: 15px;
+}

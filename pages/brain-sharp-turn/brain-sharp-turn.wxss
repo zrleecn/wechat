@@ -1,0 +1,13 @@
+
+@import '/pages/public/base.wxss';
+.section .header .header-img{
+  width: 200px;
+  height: 90px;
+}
+
+/*下一题按钮  */
+.next-look button{
+  margin-top: 40px;
+  width: 100%;
+
+}

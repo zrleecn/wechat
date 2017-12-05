@@ -1,0 +1,54 @@
+<!--评论模板  -->
+
+
+<!--评论区  -->
+
+<view class='section'>
+  <view class='comment-header'>
+    <text>评论区</text>
+    <text bindtap='writeComment'>写评论</text>
+  </view>
+
+  <view class='comment-item'>
+    <view class='portrait'>
+      <image src="/image/riddles/1.png" />
+    </view>
+    <view class='comtent-top'>
+      <text style='font-size:14px;'>{{nickName}}</text>
+      <text style='font-size:16px;margin-top:6px;'>哈哈哈答对了</text>
+      <view class='comment-bottom'>
+        <view>
+          <image src='/image/riddles/pri.png' />
+          <text>30</text>
+        </view>
+        <view>
+          <text class='date'>2017-12-1</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='comment-item'>
+    <view class='portrait'>
+      <image src="/image/riddles/1.png" />
+    </view>
+    <view class='comtent-top'>
+      <text style='font-size:14px;'>{{nickName}}</text>
+      <text style='font-size:16px;margin-top:6px;'>哈哈哈答对了</text>
+      <view class='comment-bottom'>
+        <view>
+          <image src='/image/riddles/pri.png' />  
+         <text>30</text>
+        </view>
+       
+        <view>
+          <text class='date'>2017-12-1</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+
+</view>

@@ -1,0 +1,46 @@
+<!--各个模块下的主要内容  -->
+
+
+<text>\n</text>
+
+  <!--题目内容  -->
+  <view class='item'>
+    <view class='bf-title'>
+      <text>{{config.header_title}} : </text>
+    </view>
+
+    <view class='title'>
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;{{main_content.title}}</text>
+    </view>
+
+    <view class='tips'>
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;{{main_content.tips}}</text>
+    </view>
+
+    <view class='operation'>
+      <view class='eyes'>
+        <image src='{{config.eyes_src}}' />
+        <text class='number'>{{main_content.look_num}}</text>
+      </view>
+
+      <view class='eyes'>
+        <image src='{{config.priase_src}}' />
+        <text class='number'>{{main_content.priase_num}}</text>
+      </view>
+
+    </view>
+    <view class='answer-view'>
+      <text class='answer-text' decode='true'>答案:&nbsp;</text>
+      <view class='answer-content'>
+          {{answer_text}}
+          <view class='layer' bindtouchmove='moveLayer' style='opacity:{{opacity}}'></view>
+      
+      </view>
+    </view>
+    <view class='next-look'>
+      <button type='default' hidden='{{config.explanation_hide}}' bindtap='showExpaination'>查看解释</button>
+      <button type='primary' bindtap='getnNextRiddles'>下一题</button>
+    </view>
+
+  </view>
+  <!--E 题目内容  -->

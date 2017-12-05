@@ -1,0 +1,14 @@
+<!--pages/riddles/riddles.wxml-->
+<view class='section'>
+  <!--头部开始  -->
+  <view class='header'>
+    <image class='header-img' src='/image/riddles/riddles.png' />
+    <view class='line'></view>
+  </view>
+  <!--头部结束  -->
+  
+<include src='/pages/public/wxml/main.wxml'/>
+</view>
+
+
+<include src='/pages/public/wxml/comment.wxml'/>

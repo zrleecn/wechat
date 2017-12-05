@@ -1,0 +1,44 @@
+{
+  "pages": [
+      
+    "pages/index/index",
+    "pages/comment/comment",
+    "pages/detective/detective",
+    "pages/riddles/riddles",
+    "pages/brain-sharp-turn/brain-sharp-turn",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/test/test",
+    "pages/public/wxml/footer.wxml"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "智慧袋",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "/image/index/home_select.png",
+        "iconPath": "image/index/home_ori.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/index/list_select.png",
+        "iconPath": "image/index/list_ori.png",
+        "pagePath": "pages/logs/logs",
+        "text": "智慧榜"
+      },
+      {
+        "selectedIconPath": "image/index/my_select.png",
+        "iconPath": "image/index/my_ori.png",
+        "pagePath": "pages/user/user",
+        "text": "我"
+      }
+    ]
+  }
+}

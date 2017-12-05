@@ -1,0 +1,13 @@
+<!--pages/riddles/riddles.wxml-->
+<view class='section'>
+  <!--头部开始  -->
+  <view class='header'>
+    <image class='header-img' src='/image/brain-sharp-turn/brain.png' />
+    <view class='line'></view>
+  </view>
+<include src='/pages/public/wxml/main.wxml'/>
+
+</view>
+
+<!--评论区  -->
+<include src='/pages/public/wxml/comment.wxml'/>

@@ -1,0 +1,11 @@
+@import '/pages/public/base.wxss';
+/*下一题按钮  */
+.next-look button{
+  margin-top: 40px;
+  width: 120px;
+
+}
+.next-look button:nth-child(2){
+  margin-left: 20px;
+ 
+}

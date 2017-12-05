@@ -1,0 +1,50 @@
+<!--index.wxml-->
+
+<!--banner  -->
+<view class='section'>
+  <view class='banner-view'>
+    <image class='banner' src='/image/index/banner.png' />
+  </view>
+</view>
+
+<!--主要功能  -->
+<!--颖悟绝伦  猜灯谜  脑筋急转弯-->
+<template is="main" data="{{...riddles_data}}" />
+<!--神秘妙算 小小侦探 谁是卧底  -->
+<template is="main" data="{{...detective_data}}" />
+
+<!--古灵精怪  -->
+<template is="main" data="{{...eccentric_data}}" />
+
+
+<template name="main">
+
+  <view class='section'>
+    <view class='header-view'>
+      <view class='header'>
+        <text>{{header_title}}</text>
+      </view>
+    </view>
+
+
+    <view class='main'>
+
+      <view class='main-view'>
+        <navigator url='{{navigat_url_first}}'>
+          <image src='{{img_url1}}' />
+          <text>\n{{title1}}</text>
+        </navigator>
+      </view>
+
+      <view class='main-view'>
+        <navigator url='{{navigat_url_second}}'>
+          <image src='{{img_url2}}' />
+          <text>\n{{title2}}</text>
+        </navigator>
+      </view>
+
+
+    </view>
+
+  </view>
+</template>
